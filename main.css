@@ -1,0 +1,2948 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	position:relative;
+	transition:.5s all ease-in-out;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:#534f6a;
+}
+
+body{
+	background-color: #f4f3f3;
+	position:relative;
+}
+
+a,button{
+	cursor:pointer;
+}
+
+a{
+	color: #d11c73;
+	font-weight:bold;
+}
+
+button{
+	font-size:25px;
+	padding:.3em;
+	border:none;
+	border-radius:5px;
+	text-align:center;
+	background-color:#1ecf8f;
+	box-shadow:2px 2px 4px #534f6a;
+}
+
+button:hover{
+	background-color:#d11c73;
+	color:#fdfeff;
+}
+
+button a{
+	text-decoration:none;
+	color:#534f6a;
+}
+
+section{
+	border:1px solid #000;
+}
+
+.allRows{
+	display:grid;
+	grid-template-rows:repeat(auto-fit,minmax(0,auto));
+	gap:1em;
+	align-items:center;
+}
+
+.allColumns{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	gap:1em;
+	align-items:center;
+}
+
+.twoColumns{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	gap:1rem;
+	align-items:center;
+}
+
+.threeColumns{
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:1rem;
+	align-items:center;
+}
+
+.backgroundImage{
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.show{
+	display:block;
+}
+
+.hide{
+	display:none;
+}
+
+
+
+
+/*-----End of Common Styles-----*/
+
+
+
+
+.fullPage{
+	margin:auto;
+}
+
+	.intro{
+		border:none;
+	}
+
+		.mainNav{
+			padding:1em;
+			width:80%;
+			margin:auto;
+		}
+
+		.logoBox{}
+
+		.logoBox h1{
+			font-size:45px;
+			color:#62aed0;
+			text-shadow: 2px 2px 2.5px #534f6a;
+		}
+
+		.mm{
+			list-style:none;
+		}
+
+		.mmli{
+			display:inline-block;
+			margin:1em .5em;
+		}
+
+		.mmli a{
+			text-decoration:none;
+			font-size:22px;
+			color:#534f6a;
+		}
+
+		.mmli a:hover{
+			letter-spacing:3px;
+			color:#62aed0;
+		}
+		
+		.resMenu{
+			display: none;
+			width:15%;
+		}
+
+		.modalMM{
+			position:fixed;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			background-color:#fdfeff;
+			color:#000;
+			padding:1em;
+			z-index:1;
+			height:fit-content;
+			width:50%;
+			opacity:0.85;
+			box-shadow: 2px 2px 2.5px #534f6a;
+			border-radius:10px;
+		}
+
+
+
+
+		.cover{
+			background-image:url('./images/coverBG.jpg');
+			height:75vh;
+
+			display:grid;
+			grid-template-rows:repeat(auto-fit,minmax(0,auto));
+			gap:1em;
+			justify-content:center;
+			align-content:center;
+		}
+
+		.coverTexts{
+			color:#4980a7;
+		}
+
+		.coverTexts h2{
+			font-size:38px;
+			text-shadow: 2px 2px 2.5px #534f6a;
+			text-align: center;
+		}
+
+		.wc{
+			color:#1ecf8f;
+		}
+
+		.fullName{
+			font-size:48px;
+			color:#4980a7;
+		}
+
+		.cText{
+			width:75%;
+			margin:auto;
+
+			display:grid;
+			grid-template-columns:repeat(2,1fr);
+			justify-content:center;
+		}
+
+		.cText>h2{
+			text-align:right;
+			padding: 1rem;
+			font-size: 30px;
+			color: #4980A7;
+		}
+
+		.text-carousel {
+			width: 100%;
+			overflow: hidden;
+		}
+		
+		.text-slide {
+			display: none;
+			padding: 1rem;
+			font-size: 30px;
+			text-align:left;
+			font-weight:bold;
+			color:#534f6a;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+		
+		.cTAs{
+			display:grid;
+			grid-template-columns:repeat(auto-fit,minmax(0,auto));
+			gap:1em;
+			align-content:center;
+			justify-content:center;
+		}
+
+		.cTAs button:hover{
+			transform:scale(1.0);
+		}
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	.careerSummary{
+		border:none;
+		margin:5em auto;
+		width:80%;
+	}
+
+		.photo_01{
+			background-image:url('./images/career.jpg');
+			height:500px;
+			width: 400px;
+		}
+
+		.scrolling-div {
+			width: 100%;
+			height: 500px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.scrolling-div p {
+			margin: 0;
+			padding: 5em 3em 0em 0em;
+			animation: scroll 50s linear infinite;
+			color:#534f6a;
+			font-size:25px;
+			text-shadow: 2px 2px 4px #534f6a;
+			letter-spacing:5px;
+		}		
+		
+		@keyframes scroll {
+			0% {
+				transform: translateY(0);
+			}
+			100% {
+				transform: translateY(-100%);
+			}
+		}
+
+		.chl_01{
+			color:#d11c73;
+		}
+
+		.chl_02{
+			color:#4566cd;
+		}
+
+		.cRole{
+			color:#18e4d5;
+		}
+
+		.cFld{
+			color:#4980a7;
+		}
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	.WorkedFor{
+		border:none;
+		margin:1em auto;
+		width:100%;
+	}
+
+		.WorkedFor>h2{
+			text-align:center;
+		}
+
+		.tab-container {}
+		
+		.tab-buttons {
+			display:grid;
+			justify-content:center;
+		}
+		
+		.tab-content {
+			display: none;
+			padding: 1rem;
+			margin:auto;
+			width:50%;
+		}
+		
+		.tab-content.active {
+			display: block;
+		}
+
+		.jobDetails{
+			margin-bottom:5em;
+			display:grid;
+			gap:1em;
+			align-content:center;
+		}
+
+		.jobDetails>div{
+			display: grid;
+			grid-template-columns: 2fr 8fr;
+			gap: 1em;
+			align-items: center;
+			justify-content:center;
+		}
+
+		.jobDetails>div>h3{
+			color:#D11C73;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+
+		.jobDetails>div>p {
+			color: #1ECF8F;
+			font-size: x-large;
+			justify-content:justify;
+			text-shadow: 2px 2px 2.25px #534f6a;
+		}
+
+		.jobDetails>div a{
+			text-decoration:none;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+
+		.orgName{}
+
+		.orgName>p:hover{
+			transform:scale(1.03);
+		}
+
+		.jPost{}
+
+		.jDur{}
+
+		.jobDetails{
+			margin-top:2em;
+		}
+
+		.jobDetails>h2{
+			text-align:center;
+		}
+
+		.jDesc{}
+
+		.jDesc>li{
+			color: #4980A7;
+			font-size: x-large;
+			line-height:35px;display: grid;
+			grid-template-columns: 0.5fr 9.5fr;
+			gap: 1em;
+			align-items: center;
+			justify-content:center;
+			align-items:center;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+
+		.jDesc>li:hover{
+			transform:scale(1.05);
+		}
+
+		.jDesc>li>img{
+			vertical-align:middle;
+			width:20px;
+		}
+
+
+
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	.academicBackground{
+		border:none;
+		background: rgb(98,174,208);
+		background: linear-gradient(54deg, rgba(98,174,208,1) 0%, rgba(42,111,161,1) 66%);
+		padding:1em 0;
+	}
+
+		.academicBackground>h2{
+			text-align:center;
+			color:#fdfeff;
+		}
+
+		.edus{
+			margin:2em auto;
+			width:75%;
+
+			display:grid;
+			grid-template-columns:repeat(2,1fr);
+			gap:2em;
+		}
+
+		.education{}
+
+		.education>h2{
+			text-align:center;
+			color:#fdfeff;
+		}
+
+		.edu{
+			display:grid;
+			grid-template-columns:1fr 9fr;
+			align-items:center;
+			justify-items:center;
+		}
+
+		.eduDetails {
+			list-style: none;
+			padding:1em;
+			border:1px solid #4566cd;
+			border-radius:10px;
+			box-shadow: 28px 19px 26px -9px rgba(0,0,0,0.1);			
+			background-color:#fdfeff;
+		}
+	
+		.eduDetails li {
+			display: grid;
+			grid-template-columns: 1.5fr 8.5fr;
+			gap: 1em;
+			align-items: center;
+		}
+
+		.education:hover{
+			transform:scale(1.1);
+		}
+	
+		.tit01 {
+			font-weight: bold;font-size:20px;
+		}
+
+		.det01{
+			font-size:25px;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+
+		.det01 a{
+			text-decoration:none;
+		}
+
+
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	.trainings{
+		border:none;
+		width:75%;
+		margin:auto;
+	}
+
+		.trainings>h2{
+			text-align:center;
+		}
+
+		.trngs{
+			display:grid;
+			grid-template-columns:2fr 8fr;
+			gap:1rem;
+			align-items:center;
+		}
+
+		.trainingBtns{
+			display:grid;
+			justify-content:center;
+		}
+
+		.trainingBtn{}
+
+		.trainingDescription{}
+
+		.training{
+			display:grid;
+			gap:1rem;
+		}
+
+		.training_01{}
+
+		.training_02{}
+
+		.training_03{}
+
+		.training_04{}
+
+		.training_05{}
+
+		.training_06{}
+
+		.training_07{}
+
+		.training>div{
+			display:grid;
+			grid-template-columns:1.3fr 8.7fr;
+			gap:1rem;
+			align-items:center;
+		}
+
+		.training>div:hover{
+			transform:scale(1.03);
+		}
+
+		.training>div>h3{
+			color:#d11c73;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+
+		.training>div>p{
+			font-size:x-large;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	.honors{
+		border: none;
+		margin:auto;
+		width: 85%;
+		padding:3em 0;
+	}
+
+		.honors>h2{
+			text-align:center;
+		}
+
+		.hnrs{
+			display:grid;
+			grid-template-columns:repeat(5,1fr);
+			gap:1em;
+			align-items:center;
+		}
+
+		.hnr{
+			padding:1em;
+			border:1px solid #babdbe;
+			border-radius:10px;
+			min-height:350px;
+			box-shadow:2px 2px 4px #534f6a;
+			display:grid;
+			align-items: stretch;
+		}
+
+		.hnr:hover{
+			transform:scale(1.03);
+		}
+
+		.hnr>canvas {
+			background: url("./images/achievement.png");
+			width: 100%;
+			height: 150px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+	}
+
+		.hnr>h3{
+			text-align:center;
+		}
+
+		.hnrFrm{
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(0,auto));
+			gap: 1em;
+			align-items: center;
+			/* justify-content:center; */
+		}
+
+		.hnrFrm>h3{}
+
+		.hnrFrm>p{}
+
+		.hnrFrm>p>a{
+			text-decoration:none;
+		}
+
+		.hnrs_phts{
+			display:grid;
+			justify-content:center;
+			align-items:center;
+		}
+
+		.pht{
+			display:grid;
+			justify-self:center;
+			height:100%;
+			box-shadow:2px 2px 4px #534f6a;
+		}
+
+		.phtPrev{
+			position:absolute;
+			top:50%;
+			left:5%;
+		}
+
+		.phtNext{
+			position:absolute;
+			top:50%;
+			right:5%;
+		}
+
+
+
+
+
+
+
+
+
+	.skillset{
+		border:none;
+		background: rgb(98,174,208);
+		background: linear-gradient(54deg, rgba(98,174,208,1) 0%, rgba(42,111,161,1) 66%);
+		padding:1em 0;
+	}
+
+		.skillset>h2{
+			text-align:center;
+			color:#fdfeff;
+		}
+
+		.skls{
+			display:grid;
+			grid-template-columns:3fr 7fr;
+			gap:3em;
+			align-items:center;
+			margin:auto;
+			padding:3em 1em;
+			width:75%;
+		}
+
+		.activity-card {
+			background-color: #F4F3F3;
+			border-radius: 10px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+			padding: 50px;
+		}
+	
+		.activity-title {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			text-align:center;
+		}
+	
+		.activity-details {
+			font-size: 25px;
+			color: #777;
+			text-align:left;
+		}
+
+		.skill-bars {
+			list-style: none;
+			padding: 0;
+		}
+
+		.skill-bars>li{
+			margin:1em auto;
+		}
+
+		.skill-bars>li:hover{
+			transform:scale(1.02);
+			cursor:pointer;
+		}
+		
+		.skill-name {
+			display: inline-block;
+			width: 100%;
+			font-weight: bold;
+			font-size:20px;
+			color:#fdfeff;
+		}
+		
+		.skill-bar {
+			width: 100%;
+			background-color: #e0e0e0;
+			height: 20px;
+			border-radius: 10px;
+			position: relative;
+		}
+		
+		.skill-progress {
+			background-color: #4caf50;
+			height: 100%;
+			border-radius: 10px;
+			transition: width 1s ease-in-out;
+		}
+
+	
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	.contact{
+		border:none;
+	}
+
+		.contact-form {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+			padding: 30px;
+			margin:3rem auto;
+			width: 50%;
+		}
+
+		.contact-form h2 {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.input-group {
+			margin-bottom: 20px;
+		}
+
+		.input-group label {
+			font-size: 14px;
+			font-weight: bold;
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.input-group input,
+		.input-group textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.input-group textarea {
+			resize: vertical;
+			height: 100px;
+		}
+
+		.input-group button {}
+
+		.input-group button:hover {}
+
+
+
+
+
+
+
+
+
+@media(max-width:1280px){
+	section{
+  		width:1280px;
+  		overflow:hidden;
+  	}
+
+  	.mmli a{
+  		font-size:100%;
+  	}
+
+  	.tab-buttons{
+  		margin:1rem;
+  	}
+
+  	.tab-button{
+  		font-size:100%;
+  	}
+
+  	.tit01{
+  		font-size:100%;
+  	}
+
+  	.det01{
+  		font-size:115%;
+  	}
+
+  	.hnrs {
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         gap: 1em;
+         align-items: center;
+     }
+
+		 .hrnPhtBox {
+			width: 100%;
+		}
+	
+		.pht {
+			display: grid;
+			justify-self: center;
+			width: 100%;
+			box-shadow: 2px 2px 4px #534f6a;
+		}
+
+     .activity-details {
+         font-size: 100%;
+     }
+}
+
+
+
+
+@media(max-width:1024px){
+
+	section{
+		width:1024px;
+		overflow:hidden;
+	}
+
+	.mmli a{
+		font-size:100%;
+	}
+
+	.tab-buttons{
+		margin:1rem;
+	}
+
+	.tab-button{
+		font-size:100%;
+	}
+
+	.tit01{
+		font-size:100%;
+	}
+
+	.det01{
+		font-size:115%;
+	}
+
+	.hnrs {
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 1em;
+       align-items: center;
+   }
+
+	 .hrnPhtBox {
+    width: 100%;
+	}
+
+	.pht {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    box-shadow: 2px 2px 4px #534f6a;
+	}
+
+   .activity-details {
+       font-size: 100%;
+   }
+
+}
+
+
+
+
+@media(max-width:912px){
+
+	section{
+		width:912px;
+		overflow:hidden;
+	}
+
+	.mainNav {
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    z-index: 1;
+	}
+
+	.logoBox>h1 {
+    font-size: 250%;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.cover {
+    background-image: url('./images/coverBG.jpg');
+    height: 75vh;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(0,auto));
+    gap: 1em;
+    justify-items: inherit;
+    align-content: center;
+	}
+
+	.coverTexts h2 {
+    font-size: 350%;
+    text-shadow: 2px 2px 2.5px #534f6a;
+    text-align: center;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:200%;
+	}
+
+	.text-slide{
+		font-size:200%;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p {
+    font-size: 200%;
+	}
+
+	.tab-buttons {
+		margin:1rem auto;
+		width:85%;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:100%;
+		font-size:150%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3 {
+    display: inline-block;
+    font-size: 125%;
+    color: #4566cd;
+    vertical-align: middle;
+    margin: auto 1rem;
+	}
+
+	.jobDetails>div>p {
+    display: inline-block;
+    font-size: 150%;
+		vertical-align:middle;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li {
+    display: block;
+    font-size: 150%;
+    padding: 0.2% 1%;
+    margin: 0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.edu {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    align-items: center;
+    justify-items: center;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+    grid-template-columns: 2fr 8fr;
+    font-size: 200%;
+	}
+
+	.eduImg img {
+		width:100%;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:100%;
+	}
+
+	.det01{
+		font-size:100%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtns{
+		grid-template-columns:repeat(4,1fr);
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:135%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3 {
+    display: inline-block;
+    font-size: 150%;
+    margin: 0 .2em;
+	}
+
+	.training>div>p {
+    display: inline-block;
+    font-size: 175%;
+    margin: 0 .2em;
+	}
+
+	.hnrs {
+    margin: 2em auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(auto-fit,minmax(0,auto)); */
+    gap: 1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:135%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:165%;
+	}
+
+	.hnrFrm a{
+		font-size:150%;
+	}
+
+	.skls {
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+    padding: 0;
+    margin: 0 auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
+
+
+
+
+@media(max-width:820px){
+
+	section{
+		width:820px;
+		overflow:hidden;
+	}
+
+	.mainNav {
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    z-index: 1;
+	}
+
+	.logoBox>h1 {
+    font-size: 250%;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:20px;
+	}
+
+	.text-slide{
+		font-size:20px;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p {
+    font-size: 200%;
+	}
+
+	.tab-buttons {
+		margin:1rem auto;
+		width:85%;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:100%;
+		font-size:150%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3 {
+    display: inline-block;
+    font-size: 125%;
+    color: #4566cd;
+    vertical-align: middle;
+    margin: auto 1rem;
+	}
+
+	.jobDetails>div>p {
+    display: inline-block;
+    font-size: 150%;
+		vertical-align:middle;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li {
+    display: block;
+    font-size: 150%;
+    padding: 0.2% 1%;
+    margin: 0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.edu {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    align-items: center;
+    justify-items: center;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+    grid-template-columns: 2fr 8fr;
+    font-size: 175%;
+	}
+
+	.eduImg img {
+		width:100%;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:100%;
+	}
+
+	.det01{
+		font-size:100%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtns{
+		grid-template-columns:repeat(4,1fr);
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:135%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3 {
+    display: inline-block;
+    font-size: 135%;
+    margin: 0 .2em;
+	}
+
+	.training>div>p{
+		display:inline-block;
+		font-size:150%;
+		margin:0 .2em;
+	}
+
+	.hnrs {
+    margin: 2em auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(auto-fit,minmax(0,auto)); */
+    gap: 1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:135%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:115%;
+	}
+
+	.hnrFrm a{
+		font-size:115%;
+	}
+
+	.hrnPhtBox {
+    width: 100%;
+	}
+
+	.pht {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    box-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.skls {
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+    padding: 0;
+    margin: 0 auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
+
+
+
+
+@media(max-width:540px){
+
+	section{
+		width: 540px;
+		overflow:hidden;
+	}
+
+	.mainNav {
+    height: 10%;
+	}
+
+	.scrolling-div p{
+		font-size:100%;
+	}
+
+	.tab-button{
+		font-size:85%;
+	}
+
+	.tit01{
+		font-size:75%;
+	}
+
+	.det01{
+		font-size:75%;
+	}
+
+	.jDesc li{
+		font-size:120%;
+	}
+
+	.jobDetails div h3{
+		font-size:100%;
+	}
+
+	.jobDetails div p{
+		font-size:100%;
+	}
+
+	.trainingBtn{
+		font-size:85%;
+	}
+
+	.training div>h3{
+		font-size:100%;
+	}
+
+	.training div>p{
+		font-size:100%;
+	}
+
+	.hnrs{
+		display:block;
+	}
+
+	.hnr{
+		margin:1rem auto;
+	}
+
+	.skls{
+		display:block;
+	}
+
+}
+
+
+
+
+@media(max-width:414px){
+
+		section{
+			width:414px;
+			overflow:hidden;
+		}
+	
+		.mainNav{
+			position: fixed;
+			height: 4em;
+			width: 100%;
+			left: 0;
+			top: 0;
+			background-color: #000;
+			z-index:1;
+		}
+	
+		.logoBox>h1{
+			font-size:20px;
+		}
+	
+		.mm{
+			display:none;
+		}
+	
+		.resMenu{
+			display:block;
+			justify-self:right;
+		}
+	
+		.fullName{
+			font-size:30px;
+		}
+	
+		.cText{
+			grid-template-columns:repeat(auto-fit,minmax(0,auto));
+		}
+	
+		.cText>h2{
+			font-size:20px;
+		}
+	
+		.text-slide{
+			font-size:20px;
+		}
+	
+		.photo_01{
+			display:none;
+		}
+	
+		.scrolling-div p{
+			font-size:17px;
+		}
+	
+		.tab-buttons{
+			margin:1rem auto;
+		}
+	
+		.jobDetails>div{
+			display:grid;
+			grid-template-columns:repeat(0.5fr 9.5fr);
+		}
+	
+		.tab-button{
+			width:100%;
+			font-size:100%;
+		}
+	
+		.tab-content{
+			width:100%;
+		}
+	
+		.jobDetails{
+			padding:0.2em 1em;
+			margin: 1em;
+		}
+	
+		.jobDetails>div{
+			display:block;
+		}
+	
+		.jobDetails>div>h3{
+			display:inline-block;
+			font-size:15px;
+			color:#4566cd;
+		}
+	
+		.jobDetails>div>p{
+			display:inline-block;
+			font-size:15px;
+		}
+	
+		.jDesc{
+			width:100%;
+		}
+	
+		.jDesc>li{
+			display:block;
+			font-size:17px;
+			padding:0.2% 1%;
+			margin:0.2% 1%;
+		}
+	
+		.jDesc>li>img{
+			display:inline-block;
+		}
+	
+		.edus{
+			margin:2em auto;
+			width:95%;
+	
+			display:grid;
+			grid-template-columns:none;
+			grid-template-rows:repeat(auto-fit,minmax(0,auto));
+			gap:1em;
+		}
+	
+		.eduDetails{}
+	
+		.eduDetails li {
+			grid-template-columns: 2fr 8fr;
+		}
+	
+		.eduImg img {
+			width:55px;
+		}
+	
+		.tit01 {
+			font-weight: bold;
+			font-size:50%;
+		}
+	
+		.det01{
+			font-size:50%;
+			text-shadow: 2px 2px 4px #534f6a;
+		}
+	
+		.det01 a{
+			text-decoration:none;
+		}
+	
+		.trngs{
+			margin:2em auto;
+			width:95%;
+	
+			display:grid;
+			grid-template-columns:none;
+			grid-template-rows:repeat(auto-fit,minmax(0,auto));
+			gap:1em;
+		}
+	
+		.trainingBtn{
+			width:100%;
+			font-size:85%;
+		}
+	
+		.training>div{
+			display:block;
+		}
+	
+		.training>div>h3{
+			display:inline-block;
+			font-size:100%;
+			margin:0 .2em;
+		}
+	
+		.training>div>p{
+			display:inline-block;
+			font-size:100%;
+			margin:0 .2em;
+		}
+	
+		.hnrs{
+			margin:2em auto;
+			width:95%;
+	
+			display:grid;
+			grid-template-columns:none;
+			grid-template-rows:repeat(auto-fit,minmax(0,auto));
+			gap:1em;
+		}
+	
+		.hnr{}
+	
+		.hnr{}
+	
+		.hnr>h3{
+			font-size:100%;
+		}
+	
+		.hnrFrm{}
+	
+		.hnrFrm h3{
+			font-size:100%;
+		}
+	
+		.hnrFrm a{
+			font-size:100%;
+		}
+	
+		.skls{
+			width:100%;
+			margin:.5em auto;
+		}
+	
+		.activity-card{
+			width:95%;
+			margin:.5em auto;
+		}
+	
+		.activity-details>li{
+			font-size:20px;
+		}
+	
+		.skill-bars{
+			width:95%;
+			margin:auto;
+		}
+	
+		.contact-form{
+			width:95%;
+		}
+	
+}
+
+
+
+
+@media(max-width:412px){
+
+	section{
+		width:412px;
+		overflow:hidden;
+	}
+
+	.mainNav{
+		position: fixed;
+		height: 4em;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: #000;
+		z-index:1;
+	}
+
+	.logoBox>h1{
+		font-size:20px;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:20px;
+	}
+
+	.text-slide{
+		font-size:20px;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p{
+		font-size:17px;
+	}
+
+	.tab-buttons {
+		margin: 1rem auto;
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+  }
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:fit-content;
+		font-size:75%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3{
+		display:inline-block;
+		font-size:15px;
+		color:#4566cd;
+	}
+
+	.jobDetails>div>p{
+		display:inline-block;
+		font-size:15px;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li{
+		display:block;
+		font-size:17px;
+		padding:0.2% 1%;
+		margin:0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+		grid-template-columns: 2fr 8fr;
+	}
+
+	.eduImg img {
+		width:55px;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:45%;
+	}
+
+	.det01{
+		font-size:45%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:85%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.training>div>p{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.hnrs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:100%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:100%;
+	}
+
+	.hnrFrm a{
+		font-size:100%;
+	}
+
+	.skls{
+		width:100%;
+		margin:.5em auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
+
+
+
+
+@media(max-width:393px){
+
+	section{
+		width:393px;
+		overflow:hidden;
+	}
+
+	.mainNav{
+		position: fixed;
+		height: 4em;
+		width:100%;
+		left: 0;
+		top: 0;
+		background-color: #000;
+		z-index:1;
+	}
+
+	.logoBox>h1{
+		font-size:20px;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:20px;
+	}
+
+	.text-slide{
+		font-size:20px;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p{
+		font-size:17px;
+	}
+
+	.tab-buttons{
+		margin:1rem auto;
+	}
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:100%;
+		font-size:100%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3{
+		display:inline-block;
+		font-size:15px;
+		color:#4566cd;
+	}
+
+	.jobDetails>div>p{
+		display:inline-block;
+		font-size:15px;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li{
+		display:block;
+		font-size:17px;
+		padding:0.2% 1%;
+		margin:0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+		grid-template-columns: 2fr 8fr;
+	}
+
+	.eduImg img {
+		width:55px;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:70%;
+	}
+
+	.det01{
+		font-size:70%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:85%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.training>div>p{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.hnrs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:100%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:100%;
+	}
+
+	.hnrFrm a{
+		font-size:100%;
+	}
+
+	.hrnPhtBox {
+    width: 100%;
+	}
+
+	.pht {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    box-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.skls{
+		width:100%;
+		margin:.5em auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
+
+
+
+
+@media(max-width:390px){
+
+	section{
+		width:390px;
+		overflow:hidden;
+	}
+
+	.mainNav{
+		position: fixed;
+		height: 4em;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: #000;
+		z-index:1;
+	}
+
+	.logoBox>h1{
+		font-size:20px;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:20px;
+	}
+
+	.text-slide{
+		font-size:20px;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p{
+		font-size:17px;
+	}
+
+	.tab-buttons{
+		margin:1rem auto;
+	}
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:100%;
+		font-size:100%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3{
+		display:inline-block;
+		font-size:15px;
+		color:#4566cd;
+	}
+
+	.jobDetails>div>p{
+		display:inline-block;
+		font-size:15px;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li{
+		display:block;
+		font-size:17px;
+		padding:0.2% 1%;
+		margin:0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+		grid-template-columns: 2fr 8fr;
+	}
+
+	.eduImg img {
+		width:55px;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:70%;
+	}
+
+	.det01{
+		font-size:70%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:85%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.training>div>p{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.hnrs{
+		margin:2em auto;
+		width:90%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:100%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:100%;
+	}
+
+	.hnrFrm a{
+		font-size:100%;
+	}
+
+	.skls{
+		width:100%;
+		margin:.5em auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
+
+
+
+
+@media(max-width:375px){
+
+	section{
+		width:375px;
+		overflow:hidden;
+	}
+
+	.mainNav{
+		position: fixed;
+		height: 4em;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: #000;
+		z-index:1;
+	}
+
+	.logoBox>h1{
+		font-size:20px;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:20px;
+	}
+
+	.text-slide{
+		font-size:20px;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p{
+		font-size:17px;
+	}
+
+	.tab-buttons{
+		margin:1rem auto;
+	}
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:100%;
+		font-size:75%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3{
+		display:inline-block;
+		font-size:15px;
+		color:#4566cd;
+	}
+
+	.jobDetails>div>p{
+		display:inline-block;
+		font-size:15px;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li{
+		display:block;
+		font-size:17px;
+		padding:0.2% 1%;
+		margin:0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+		grid-template-columns: 2fr 8fr;
+	}
+
+	.eduImg img {
+		width:55px;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:50%;
+	}
+
+	.det01{
+		font-size:50%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:70%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.training>div>p{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.hnrs {
+    margin: 0;
+    width: 84%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto-fit,minmax(0,auto));
+    gap: 1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:100%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:100%;
+	}
+
+	.hnrFrm a{
+		font-size:100%;
+	}
+
+	.hrnPhtBox{
+		width:375px;
+	}
+
+	.pht {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    box-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.hrnPhtBox button{
+		font-size:80%;
+	}
+
+	.phtPrev {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+	}
+
+	.phtNext {
+    position: absolute;
+    right: 20%;
+		top:85%;
+	}
+
+	.skls{
+		width:100%;
+		margin:.5em auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
+
+
+
+
+@media(max-width:414px){
+
+	section{
+		width:414px;
+		overflow:hidden;
+	}
+
+	.mainNav{
+		position: fixed;
+		height: 4em;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: #000;
+		z-index:1;
+	}
+
+	.logoBox>h1{
+		font-size:20px;
+	}
+
+	.mm{
+		display:none;
+	}
+
+	.resMenu{
+		display:block;
+		justify-self:right;
+	}
+
+	.fullName{
+		font-size:30px;
+	}
+
+	.cText{
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	}
+
+	.cText>h2{
+		font-size:20px;
+	}
+
+	.text-slide{
+		font-size:20px;
+	}
+
+	.photo_01{
+		display:none;
+	}
+
+	.scrolling-div p{
+		font-size:17px;
+	}
+
+	.tab-buttons{
+		margin:1rem auto;
+	}
+
+	.jobDetails>div{
+		display:grid;
+		grid-template-columns:repeat(0.5fr 9.5fr);
+	}
+
+	.tab-button{
+		width:100%;
+		font-size:75%;
+	}
+
+	.tab-content{
+		width:100%;
+	}
+
+	.jobDetails{
+		padding:0.2em 1em;
+		margin: 1em;
+	}
+
+	.jobDetails>div{
+		display:block;
+	}
+
+	.jobDetails>div>h3{
+		display:inline-block;
+		font-size:15px;
+		color:#4566cd;
+	}
+
+	.jobDetails>div>p{
+		display:inline-block;
+		font-size:15px;
+	}
+
+	.jDesc{
+		width:100%;
+	}
+
+	.jDesc>li{
+		display:block;
+		font-size:17px;
+		padding:0.2% 1%;
+		margin:0.2% 1%;
+	}
+
+	.jDesc>li>img{
+		display:inline-block;
+	}
+
+	.edus{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.eduDetails{}
+
+	.eduDetails li {
+		grid-template-columns: 2fr 8fr;
+	}
+
+	.eduImg img {
+		width:55px;
+	}
+
+	.tit01 {
+		font-weight: bold;
+		font-size:50%;
+	}
+
+	.det01{
+		font-size:50%;
+		text-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.det01 a{
+		text-decoration:none;
+	}
+
+	.trngs{
+		margin:2em auto;
+		width:95%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.trainingBtn{
+		width:100%;
+		font-size:70%;
+	}
+
+	.training>div{
+		display:block;
+	}
+
+	.training>div>h3{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.training>div>p{
+		display:inline-block;
+		font-size:100%;
+		margin:0 .2em;
+	}
+
+	.hnrs{
+		margin:2em auto;
+		width:28%;
+
+		display:grid;
+		grid-template-columns:none;
+		grid-template-rows:repeat(auto-fit,minmax(0,auto));
+		gap:1em;
+	}
+
+	.hnrs {
+    margin: 0;
+    width: 93%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto-fit,minmax(0,auto));
+    gap: 1em;
+	}
+
+	.hnr{}
+
+	.hnr{}
+
+	.hnr>h3{
+		font-size:100%;
+	}
+
+	.hnrFrm{}
+
+	.hnrFrm h3{
+		font-size:100%;
+	}
+
+	.hnrFrm a{
+		font-size:100%;
+	}
+
+	.hrnPhtBox{
+		width:375px;
+	}
+
+	.pht {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    box-shadow: 2px 2px 4px #534f6a;
+	}
+
+	.hrnPhtBox button{
+		font-size:80%;
+	}
+
+	.phtPrev {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+	}
+
+	.phtNext {
+    position: absolute;
+    right: 10%;
+		top:50%;
+	}
+
+	.skls{
+		width:100%;
+		margin:.5em auto;
+	}
+
+	.activity-card{
+		width:95%;
+		margin:.5em auto;
+	}
+
+	.activity-details>li{
+		font-size:20px;
+	}
+
+	.skill-bars{
+		width:95%;
+		margin:auto;
+	}
+
+	.contact-form{
+		width:95%;
+	}
+
+}
